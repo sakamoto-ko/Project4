@@ -452,6 +452,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 			ImGui::ShowDemoWindow();
 
+			ImGui::Begin("Window");
+			ImGui::ColorEdit3("color", &materialData->x);
+			ImGui::End();
+
 			ImGui::Render();
 
 			UINT backBufferIndex = swapChain->GetCurrentBackBufferIndex();
