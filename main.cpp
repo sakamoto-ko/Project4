@@ -81,7 +81,7 @@ IDxcBlob* CompileShader(
 		filePath.c_str(),
 		L"-E",L"main",
 		L"-T",profile,
-		L"Zi",L"-Qembed_debug",
+		L"-Zi",L"-Qembed_debug",
 		L"-Od",
 		L"-Zpr",
 	};
